@@ -1,0 +1,20 @@
+/* Empty. Add your own CSS if you like */
+
+.color--red {
+    color: #ff0000;
+}
+
+.color--green {
+    color: #00e500;
+}
+
+.button-item {
+    float: left;
+    width: 31%;
+    margin: 1em;
+    text-align: right;
+}
+
+.button-item .remove-button {
+    margin-top: 5px;
+}

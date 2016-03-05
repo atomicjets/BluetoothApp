@@ -1,0 +1,15 @@
+<ion-view view-title="buttonsPad">
+    <ion-content>
+        <div class="button-item" ng-repeat="button in buttons track by $index">
+            <label class="item item-input">
+                <input type="text" placeholder="Título" ng-model="button.title" ng-blur="saveButtons()">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Texto a mandar" ng-model="button.text" ng-blur="saveButtons()">
+            </label>
+            <button class="button remove-button" ng-click="removeButton(button)"><i class="icon ion-trash-b"></i></button>
+            <button class="button button-full" ng-click="send(button)">Mandar</button>
+        </div>
+        <button class="button" ng-click="addButton()">Crear Nuevo</button>
+    </ion-content>
+</ion-view>
