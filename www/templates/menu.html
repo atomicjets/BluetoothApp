@@ -14,8 +14,8 @@
                 <button class="button" ng-show="!common.itsConnected && common.selectedDevice" ng-click="refresh()">
                     <i class="icon ion-refresh"></i>
                 </button>
-                <label class="color--red" ng-show="!common.itsConnected"> Sin conexión </label>
-                <label class="color--green" ng-show="common.itsConnected"> Conectado </label>
+                <label class="color--red" ng-show="!common.itsConnected"> {{'menu-no--connection' | translate}} </label>
+                <label class="color--green" ng-show="common.itsConnected"> {{'menu-connected' | translate}} </label>
             </ion-nav-buttons>
         </ion-nav-bar>
         <ion-nav-view name="menuContent"></ion-nav-view>
@@ -27,10 +27,10 @@
         <ion-content>
             <ion-list>
                 <ion-item menu-close href="#/app/devices">
-                    Buscar dispositivos Bluetooth
+                    {{'devices-button-search--devices' | translate}}
                 </ion-item>
                 <ion-item menu-close href="#/app/buttonsPad">
-                    Botonera
+                    {{'menu-buttons' | translate}}
                 </ion-item>
             </ion-list>
         </ion-content>
